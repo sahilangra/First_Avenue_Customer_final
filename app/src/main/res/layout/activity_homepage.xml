@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/homepage_bacground"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#70000000"/>
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER"
+
+        android:textColor="#ffffff"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/buttons_outline"
+        android:id="@+id/cust_btn"
+        android:layout_above="@id/staff_btn"
+        android:onClick="cust_dash"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="STAFF"
+        android:id="@+id/staff_btn"
+        android:layout_margin="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/buttons_outline"
+        android:layout_centerInParent="true"
+        android:onClick="staff_dash"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="MANAGER"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/buttons_outline"
+        android:id="@+id/mng_btn"
+        android:textColor="#ffffff"
+        android:layout_below="@id/staff_btn"
+        android:onClick="mng_dash"/>
+</RelativeLayout>

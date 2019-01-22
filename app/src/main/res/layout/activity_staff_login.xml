@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".staff_login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STAFF LOGIN "
+        android:paddingBottom="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/staff_user_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/staff_user_label"
+        android:layout_above="@id/staff_user_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"/>
+    <TextView
+        android:id="@+id/staff_password_label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:layout_centerVertical="true"/>
+    <EditText
+        android:id="@+id/staff_user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/staff_password_label"
+        android:hint="Username"/>
+    <EditText
+        android:id="@+id/staff_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/staff_password_label"
+        android:hint="Password"/>
+    <Button
+        android:id="@+id/staff_log_btn"
+        android:layout_width="wrap_content"
+        android:onClick="staff_dash"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_password_field"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true"
+        android:text="Log me in"/>
+    <Button
+        android:id="@+id/staff_reset_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staff_password_field"
+        android:text="Reset"
+        android:onClick="staff_reset_pswd"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

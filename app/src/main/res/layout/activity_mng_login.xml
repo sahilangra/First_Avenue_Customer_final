@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mng_login">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MANAGER LOGIN "
+        android:paddingBottom="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/mng_user_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <TextView
+        android:id="@+id/mng_user_label"
+        android:layout_above="@id/mng_user_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"/>
+    <TextView
+        android:id="@+id/mng_password_label"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:layout_centerVertical="true"/>
+    <EditText
+        android:id="@+id/mng_user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mng_password_label"
+        android:hint="Username"/>
+    <EditText
+        android:id="@+id/mng_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mng_password_label"
+        android:hint="Password"/>
+    <Button
+        android:id="@+id/mng_log_btn"
+        android:layout_width="wrap_content"
+        android:onClick="mng_dash"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mng_password_field"
+        android:layout_centerInParent="true"
+        android:text="Log me in"/>
+
+</RelativeLayout>
